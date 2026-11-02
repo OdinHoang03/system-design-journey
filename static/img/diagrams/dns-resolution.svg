@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 300" role="img" aria-labelledby="t d"><title id="t">DNS resolution</title><desc id="d">Browser asks a recursive resolver, which asks root, TLD and authoritative name servers and returns the IP.</desc><style>text{font:600 16px sans-serif;fill:#1b1b1b}.s{font:400 13px sans-serif;fill:#444}.b{fill:#e8f5ee;stroke:#1f6b45;stroke-width:2.5}.g{fill:#f3f3f3;stroke:#777;stroke-width:2}.o{fill:#fff3e0;stroke:#c77700;stroke-width:2.5}.l{stroke:#555;stroke-width:2.2;fill:none}.d{stroke:#555;stroke-width:2.2;fill:none;stroke-dasharray:6 5}</style><defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker></defs>
+<rect x="20" y="110" width="120" height="70" rx="10" class="b"/><text x="80" y="140" text-anchor="middle">Browser</text><text x="80" y="162" text-anchor="middle" class="s">notenest.example?</text>
+<rect x="220" y="110" width="140" height="70" rx="10" class="o"/><text x="290" y="140" text-anchor="middle">Resolver</text><text x="290" y="162" text-anchor="middle" class="s">cache (TTL)</text>
+<rect x="500" y="20" width="170" height="56" rx="10" class="g"/><text x="585" y="45" text-anchor="middle">Root</text><text x="585" y="64" text-anchor="middle" class="s">"ask .example"</text>
+<rect x="500" y="122" width="170" height="56" rx="10" class="g"/><text x="585" y="147" text-anchor="middle">TLD (.example)</text><text x="585" y="166" text-anchor="middle" class="s">"ask ns1.host"</text>
+<rect x="500" y="224" width="170" height="56" rx="10" class="g"/><text x="585" y="249" text-anchor="middle">Authoritative</text><text x="585" y="268" text-anchor="middle" class="s">"A 203.0.113.10"</text>
+<path d="M142 145 H216" class="l" marker-end="url(#a)"/><text x="180" y="136" text-anchor="middle" class="s">1</text>
+<path d="M362 130 L496 55" class="l" marker-end="url(#a)"/><text x="420" y="78" class="s">2</text>
+<path d="M362 145 H496" class="l" marker-end="url(#a)"/><text x="430" y="138" class="s">3</text>
+<path d="M362 165 L496 245" class="l" marker-end="url(#a)"/><text x="420" y="222" class="s">4</text>
+<path d="M216 175 H142" class="d" marker-end="url(#a)"/><text x="180" y="196" text-anchor="middle" class="s">5: IP</text>
+</svg>
