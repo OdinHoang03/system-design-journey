@@ -6,6 +6,10 @@ import cache from './quizzes/cache';
 import databaseReplicationSharding from './quizzes/database-replication-sharding';
 import messageQueue from './quizzes/message-queue';
 import urlShortener from './quizzes/url-shortener';
+import eventStreaming from './quizzes/event-streaming';
+import reliabilityPatterns from './quizzes/reliability-patterns';
+import distributedTransactions from './quizzes/distributed-transactions';
+import consensus from './quizzes/consensus';
 
 export const quizzes = {
   'client-server-http': clientServerHttp,
@@ -14,5 +18,9 @@ export const quizzes = {
   cache,
   'database-replication-sharding': databaseReplicationSharding,
   'message-queue': messageQueue,
+  'event-streaming': eventStreaming,
+  'reliability-patterns': reliabilityPatterns,
+  'distributed-transactions': distributedTransactions,
+  consensus,
   'url-shortener': urlShortener,
 };
