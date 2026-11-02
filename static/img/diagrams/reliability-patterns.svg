@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 260" role="img" aria-labelledby="t d"><title id="t">Circuit breaker and bulkhead</title><desc id="d">A service calls a dependency through a circuit breaker with closed, open and half-open states, and separate thread pools isolate each dependency.</desc><style>text{font:600 16px sans-serif;fill:#1b1b1b}.s{font:400 13px sans-serif;fill:#444}.b{fill:#e8f5ee;stroke:#1f6b45;stroke-width:2.5}.g{fill:#f3f3f3;stroke:#777;stroke-width:2}.o{fill:#fff3e0;stroke:#c77700;stroke-width:2.5}.l{stroke:#555;stroke-width:2.2;fill:none}.d{stroke:#555;stroke-width:2.2;fill:none;stroke-dasharray:6 5}</style><defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker></defs>
+<rect x="20" y="95" width="120" height="60" rx="10" class="b"/><text x="80" y="131" text-anchor="middle">API</text>
+<rect x="210" y="20" width="200" height="90" rx="10" class="o"/><text x="310" y="46" text-anchor="middle">Circuit breaker</text><text x="310" y="68" text-anchor="middle" class="s">Closed → Open</text><text x="310" y="90" text-anchor="middle" class="s">Half-open → Closed</text>
+<rect x="210" y="150" width="200" height="90" rx="10" class="g"/><text x="310" y="176" text-anchor="middle">Bulkhead</text><text x="310" y="198" text-anchor="middle" class="s">pool A · 10 threads</text><text x="310" y="218" text-anchor="middle" class="s">pool B · 10 threads</text>
+<rect x="550" y="30" width="130" height="50" rx="10" class="b"/><text x="615" y="60" text-anchor="middle">Email service</text>
+<rect x="550" y="170" width="130" height="50" rx="10" class="b"/><text x="615" y="200" text-anchor="middle">PDF service</text>
+<path d="M142 115 L206 80" class="l" marker-end="url(#a)"/><path d="M142 135 L206 180" class="l" marker-end="url(#a)"/>
+<path d="M412 65 H546" class="l" marker-end="url(#a)"/><text x="480" y="56" text-anchor="middle" class="s">timeout</text>
+<path d="M412 195 H546" class="l" marker-end="url(#a)"/>
+<path d="M206 100 C 160 150 120 190 84 160" class="d" marker-end="url(#a)"/><text x="130" y="215" text-anchor="middle" class="s">fallback</text>
+</svg>

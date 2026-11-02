@@ -20,7 +20,7 @@ const sidebars = {
     {type: 'category', label: 'Nền tảng', collapsed: false, items: ['client-server-http', 'dns-cdn', 'estimation', 'api-design']},
     {type: 'category', label: 'Scale & hiệu năng', collapsed: false, items: ['load-balancer', 'cache', 'proxy-api-gateway', 'rate-limiting']},
     {type: 'category', label: 'Dữ liệu', collapsed: false, items: ['database-replication-sharding', 'sql-vs-nosql', 'indexing-storage-engines', 'consistency-cap', 'object-storage-search']},
-    {type: 'category', label: 'Bất đồng bộ & độ tin cậy', collapsed: false, items: ['message-queue']},
+    {type: 'category', label: 'Bất đồng bộ & độ tin cậy', collapsed: false, items: ['message-queue', 'event-streaming', 'reliability-patterns', 'distributed-transactions', 'consensus']},
     {type: 'category', label: 'Case study', collapsed: false, items: ['url-shortener']},
   ],
 };
