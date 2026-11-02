@@ -6,6 +6,10 @@ import cache from './quizzes/cache';
 import databaseReplicationSharding from './quizzes/database-replication-sharding';
 import messageQueue from './quizzes/message-queue';
 import urlShortener from './quizzes/url-shortener';
+import monolithMicroservices from './quizzes/monolith-microservices';
+import observability from './quizzes/observability';
+import deploymentRelease from './quizzes/deployment-release';
+import securityBasics from './quizzes/security-basics';
 import eventStreaming from './quizzes/event-streaming';
 import reliabilityPatterns from './quizzes/reliability-patterns';
 import distributedTransactions from './quizzes/distributed-transactions';
@@ -26,6 +30,10 @@ export const quizzes = {
   cache,
   'database-replication-sharding': databaseReplicationSharding,
   'message-queue': messageQueue,
+  'monolith-microservices': monolithMicroservices,
+  observability,
+  'deployment-release': deploymentRelease,
+  'security-basics': securityBasics,
   'event-streaming': eventStreaming,
   'reliability-patterns': reliabilityPatterns,
   'distributed-transactions': distributedTransactions,

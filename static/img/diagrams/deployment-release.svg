@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 260" role="img" aria-labelledby="t d"><title id="t">Canary release</title><desc id="d">A load balancer sends 95 percent of traffic to the stable version and 5 percent to the canary version; metrics from the canary decide whether to promote or roll back.</desc><style>text{font:600 16px sans-serif;fill:#1b1b1b}.s{font:400 13px sans-serif;fill:#444}.b{fill:#e8f5ee;stroke:#1f6b45;stroke-width:2.5}.g{fill:#f3f3f3;stroke:#777;stroke-width:2}.o{fill:#fff3e0;stroke:#c77700;stroke-width:2.5}.l{stroke:#555;stroke-width:2.2;fill:none}.d{stroke:#555;stroke-width:2.2;fill:none;stroke-dasharray:6 5}</style><defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker></defs>
+<rect x="20" y="95" width="130" height="60" rx="10" class="g"/><text x="85" y="130" text-anchor="middle">Load balancer</text>
+<rect x="300" y="30" width="200" height="60" rx="10" class="b"/><text x="400" y="55" text-anchor="middle">v1 stable</text><text x="400" y="75" text-anchor="middle" class="s">3 servers</text>
+<rect x="300" y="160" width="200" height="60" rx="10" class="o"/><text x="400" y="185" text-anchor="middle">v2 canary</text><text x="400" y="205" text-anchor="middle" class="s">1 server</text>
+<rect x="560" y="95" width="120" height="60" rx="10" class="g"/><text x="620" y="122" text-anchor="middle">Metrics</text><text x="620" y="142" text-anchor="middle" class="s">errors · latency</text>
+<path d="M152 110 L296 66" class="l" marker-end="url(#a)"/><text x="205" y="73" text-anchor="middle" class="s">95%</text>
+<path d="M152 140 L296 184" class="l" marker-end="url(#a)"/><text x="205" y="182" text-anchor="middle" class="s">5%</text>
+<path d="M502 190 L580 158" class="d" marker-end="url(#a)"/><path d="M502 60 L580 92" class="d" marker-end="url(#a)"/>
+<path d="M620 157 C 620 245 85 250 85 160" class="d" marker-end="url(#a)"/><text x="350" y="248" text-anchor="middle" class="s">promote or roll back</text>
+</svg>
