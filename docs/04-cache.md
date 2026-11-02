@@ -99,12 +99,9 @@ Ghi chú vừa được sửa, nhưng cache còn bản cũ. Các cách xử lý:
 
 ## Bài tập & câu hỏi phỏng vấn
 
-1. Viết cache-aside cho `get_note(id)` với Redis, có TTL và xoá khóa khi sửa ghi chú.
-2. Tính: hit ratio 90% → 99% thì lượng truy vấn tới DB giảm bao nhiêu lần?
-3. Giải thích cache stampede và đề xuất hai cách giảm nhẹ.
-4. Khi nào chọn write-through thay vì cache-aside? Còn write-back?
-5. Thiết kế cache cho bảng xếp hạng cập nhật liên tục. Bạn chấp nhận độ trễ dữ liệu bao nhiêu và vì sao?
-6. LRU được cài đặt thế nào với độ phức tạp O(1)? (Gợi ý: hash map + danh sách liên kết đôi.)
+Chọn một đáp án cho mỗi câu; đáp án đúng và lời giải hiện ngay. Kết quả được lưu trong trình duyệt này.
+
+<Quiz lessonId="cache" />
 
 ## Đọc thêm
 

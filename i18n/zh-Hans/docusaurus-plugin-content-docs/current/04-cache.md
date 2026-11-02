@@ -99,12 +99,9 @@ def get_featured_notes():
 
 ## 练习与面试题
 
-1. 用 Redis 为 `get_note(id)` 写一个 cache-aside 实现,带 TTL,并在修改笔记时删除对应 key。
-2. 计算:命中率从 90% 提高到 99%,打到 DB 的查询量减少了多少倍?
-3. 解释缓存击穿(cache stampede),并提出两种缓解办法。
-4. 什么时候该选 write-through 而不是 cache-aside?write-back 呢?
-5. 为一个持续更新的排行榜设计缓存。你能接受多大的数据延迟,为什么?
-6. 如何以 O(1) 的复杂度实现 LRU?(提示:哈希表 + 双向链表。)
+每题选一个答案,正确答案和解析会立即显示。结果保存在此浏览器中。
+
+<Quiz lessonId="cache" />
 
 ## 延伸阅读
 

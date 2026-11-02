@@ -88,11 +88,9 @@ You changed `app.js`, but the edge still serves the old one? There are three way
 
 ## Exercises & interview questions
 
-1. Run `dig +trace notenest.example` (or any domain) and identify each layer: root, TLD, authoritative.
-2. You need to move to a new server IP with minimal downtime. In what order do you do it, and how do you adjust the TTL?
-3. Design a caching strategy for: avatar images, `app.js`, the home page, and the API that lists a user's notes.
-4. How does a CDN help with dynamic content? When should you *not* cache?
-5. Explain cache stampede at a CDN and two ways to mitigate it (request coalescing, stale-while-revalidate).
+Pick one answer per question; the right answer and an explanation appear straight away. Results are saved in this browser.
+
+<Quiz lessonId="dns-cdn" />
 
 ## Further reading
 

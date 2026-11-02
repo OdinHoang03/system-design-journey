@@ -121,13 +121,9 @@ The write path: the app takes an ID from its allocated block, converts it to Bas
 
 ## Exercises & interview questions
 
-1. Redo the estimation with different numbers (1 billion links/month). Which component changes first?
-2. Compare the three code-generation approaches; pick one and defend it.
-3. Add a "self-destruct after N clicks" feature. What needs to change, and what concurrency problems come up?
-4. Design the statistic "top links by country in the last 24 hours".
-5. The system must survive the cache dying completely. What do you do?
-6. Expand to multiple geographic regions: where do the data and the IDs live?
-7. *Hands-on:* implement a minimal version (one server, SQLite, `to_base62`), then add a cache.
+Pick one answer per question; the right answer and an explanation appear straight away. Results are saved in this browser.
+
+<Quiz lessonId="url-shortener" />
 
 ## Further reading
 

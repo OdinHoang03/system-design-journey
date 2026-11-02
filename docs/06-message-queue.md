@@ -87,12 +87,9 @@ Queue thường chỉ đảm bảo thứ tự trong một phân vùng/nhóm (ví
 
 ## Bài tập & câu hỏi phỏng vấn
 
-1. Thiết kế luồng "xuất PDF" của NoteNest bằng queue: người dùng nhận kết quả bằng cách nào (polling, email, WebSocket)?
-2. Vì sao exactly-once gần như không đạt được và ta làm gì thay thế?
-3. Viết consumer idempotent cho "gửi email chào mừng".
-4. Giải thích DLQ, visibility timeout và backoff.
-5. Queue đang dài ra liên tục. Liệt kê những nguyên nhân có thể và cách xử lý.
-6. Khi nào chọn Kafka (log) thay vì queue kiểu RabbitMQ/SQS?
+Chọn một đáp án cho mỗi câu; đáp án đúng và lời giải hiện ngay. Kết quả được lưu trong trình duyệt này.
+
+<Quiz lessonId="message-queue" />
 
 ## Đọc thêm
 

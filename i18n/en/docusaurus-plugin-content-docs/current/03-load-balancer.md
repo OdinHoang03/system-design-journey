@@ -80,12 +80,9 @@ A single LB is a single point of failure again. In practice you use an active–
 
 ## Exercises & interview questions
 
-1. Configure NGINX as an LB for three local servers (ports 3001–3003), shut one down, and observe that requests still succeed.
-2. When does round robin perform badly, and what does `least connections` fix?
-3. Your app stores sessions in RAM. List three ways to move to horizontal scaling and give the pros and cons of each.
-4. How do you keep the LB from becoming a single point of failure?
-5. Explain the difference between an L4 and an L7 LB; when do you need L7?
-6. Design a health check for an API that depends on a database and a cache.
+Pick one answer per question; the right answer and an explanation appear straight away. Results are saved in this browser.
+
+<Quiz lessonId="load-balancer" />
 
 ## Further reading
 
