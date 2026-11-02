@@ -21,6 +21,7 @@ const sidebars = {
     {type: 'category', label: 'Scale & hiệu năng', collapsed: false, items: ['load-balancer', 'cache']},
     {type: 'category', label: 'Dữ liệu', collapsed: false, items: ['database-replication-sharding']},
     {type: 'category', label: 'Bất đồng bộ & độ tin cậy', collapsed: false, items: ['message-queue']},
+    {type: 'category', label: 'Vận hành & kiến trúc', collapsed: false, items: ['monolith-microservices', 'observability', 'deployment-release', 'security-basics']},
     {type: 'category', label: 'Case study', collapsed: false, items: ['url-shortener']},
   ],
 };

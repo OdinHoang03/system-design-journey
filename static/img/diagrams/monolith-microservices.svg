@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 260" role="img" aria-labelledby="t d"><title id="t">Monolith to microservices</title><desc id="d">Left: one deployable monolith with internal modules sharing one database. Right: separate services, each with its own database, talking through APIs and events.</desc><style>text{font:600 16px sans-serif;fill:#1b1b1b}.s{font:400 13px sans-serif;fill:#444}.b{fill:#e8f5ee;stroke:#1f6b45;stroke-width:2.5}.g{fill:#f3f3f3;stroke:#777;stroke-width:2}.o{fill:#fff3e0;stroke:#c77700;stroke-width:2.5}.l{stroke:#555;stroke-width:2.2;fill:none}.d{stroke:#555;stroke-width:2.2;fill:none;stroke-dasharray:6 5}</style><defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker></defs>
+<rect x="15" y="15" width="230" height="170" rx="12" class="g"/><text x="130" y="38" text-anchor="middle">Modular monolith</text>
+<rect x="30" y="52" width="95" height="40" rx="8" class="b"/><text x="77" y="77" text-anchor="middle" class="s">Notes</text>
+<rect x="135" y="52" width="95" height="40" rx="8" class="b"/><text x="182" y="77" text-anchor="middle" class="s">Billing</text>
+<rect x="30" y="102" width="95" height="40" rx="8" class="b"/><text x="77" y="127" text-anchor="middle" class="s">Sharing</text>
+<rect x="135" y="102" width="95" height="40" rx="8" class="b"/><text x="182" y="127" text-anchor="middle" class="s">Search</text>
+<rect x="60" y="205" width="140" height="40" rx="8" class="o"/><text x="130" y="230" text-anchor="middle" class="s">One database</text>
+<path d="M130 188 V203" class="l" marker-end="url(#a)"/>
+<path d="M262 100 H318" class="d" marker-end="url(#a)"/><text x="290" y="90" text-anchor="middle" class="s">split</text>
+<rect x="335" y="15" width="110" height="40" rx="8" class="b"/><text x="390" y="40" text-anchor="middle" class="s">Notes</text>
+<rect x="335" y="95" width="110" height="40" rx="8" class="b"/><text x="390" y="120" text-anchor="middle" class="s">Billing</text>
+<rect x="335" y="175" width="110" height="40" rx="8" class="b"/><text x="390" y="200" text-anchor="middle" class="s">Search</text>
+<rect x="575" y="15" width="110" height="40" rx="8" class="o"/><text x="630" y="40" text-anchor="middle" class="s">DB</text>
+<rect x="575" y="95" width="110" height="40" rx="8" class="o"/><text x="630" y="120" text-anchor="middle" class="s">DB</text>
+<rect x="575" y="175" width="110" height="40" rx="8" class="o"/><text x="630" y="200" text-anchor="middle" class="s">DB</text>
+<path d="M447 35 H571" class="l" marker-end="url(#a)"/><path d="M447 115 H571" class="l" marker-end="url(#a)"/><path d="M447 195 H571" class="l" marker-end="url(#a)"/>
+<path d="M390 57 V93" class="d" marker-end="url(#a)"/><path d="M390 137 V173" class="d" marker-end="url(#a)"/>
+<text x="510" y="245" text-anchor="middle" class="s">API / event between services; one DB per service</text>
+</svg>

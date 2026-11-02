@@ -19,6 +19,10 @@
     "message": "Async & reliability",
     "description": "The label for category Bất đồng bộ & độ tin cậy in sidebar lessons"
   },
+  "sidebar.lessons.category.Vận hành & kiến trúc": {
+    "message": "Operations & architecture",
+    "description": "The label for category Vận hành & kiến trúc in sidebar lessons"
+  },
   "sidebar.lessons.category.Case study": {
     "message": "Case studies",
     "description": "The label for category Case study in sidebar lessons"
