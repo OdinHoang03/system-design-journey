@@ -28,3 +28,11 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Accessibility: links inside prose must not rely on colour alone; code tokens need AA contrast in light mode. */
+.markdown a:not(.button) { text-decoration: underline; }
+[data-theme='light'] .token.comment { color: #5b5b52 !important; }
+[data-theme='light'] .token.string { color: #b3124f !important; }
+[data-theme='light'] .token.function { color: #c4262e !important; }
+[data-theme='light'] .token.number,
+[data-theme='light'] .token.boolean { color: #00716f !important; }

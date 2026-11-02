@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 260" role="img" aria-labelledby="t d"><title id="t">Primary-replica replication</title><desc id="d">Writes go to the primary, which streams changes to two read replicas that serve reads.</desc><style>text{font:600 16px sans-serif;fill:#1b1b1b}.s{font:400 13px sans-serif;fill:#444}.b{fill:#e8f5ee;stroke:#1f6b45;stroke-width:2.5}.g{fill:#f3f3f3;stroke:#777;stroke-width:2}.o{fill:#fff3e0;stroke:#c77700;stroke-width:2.5}.l{stroke:#555;stroke-width:2.2;fill:none}.d{stroke:#555;stroke-width:2.2;fill:none;stroke-dasharray:6 5}</style><defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker></defs>
+<rect x="20" y="40" width="130" height="50" rx="10" class="b"/><text x="85" y="70" text-anchor="middle">App (writes)</text>
+<rect x="20" y="170" width="130" height="50" rx="10" class="b"/><text x="85" y="200" text-anchor="middle">App (reads)</text>
+<rect x="290" y="30" width="150" height="70" rx="10" class="o"/><text x="365" y="60" text-anchor="middle">Primary</text><text x="365" y="82" text-anchor="middle" class="s">accepts writes</text>
+<rect x="540" y="130" width="130" height="50" rx="10" class="g"/><text x="605" y="160" text-anchor="middle">Replica 1</text>
+<rect x="540" y="200" width="130" height="50" rx="10" class="g"/><text x="605" y="230" text-anchor="middle">Replica 2</text>
+<path d="M152 65 H286" class="l" marker-end="url(#a)"/>
+<path d="M442 85 L538 150" class="d" marker-end="url(#a)"/><path d="M420 100 L540 222" class="d" marker-end="url(#a)"/><text x="470" y="140" class="s">async log</text>
+<path d="M152 195 L536 155" class="l" marker-end="url(#a)"/><path d="M152 205 L536 225" class="l" marker-end="url(#a)"/>
+</svg>
