@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 300" role="img" aria-labelledby="t d"><title id="t">URL shortener architecture</title><desc id="d">Clients go through a CDN and load balancer to stateless app servers; reads hit a cache then the database; clicks are sent to a queue for analytics.</desc><style>text{font:600 16px sans-serif;fill:#1b1b1b}.s{font:400 13px sans-serif;fill:#444}.b{fill:#e8f5ee;stroke:#1f6b45;stroke-width:2.5}.g{fill:#f3f3f3;stroke:#777;stroke-width:2}.o{fill:#fff3e0;stroke:#c77700;stroke-width:2.5}.l{stroke:#555;stroke-width:2.2;fill:none}.d{stroke:#555;stroke-width:2.2;fill:none;stroke-dasharray:6 5}</style><defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker></defs>
+<rect x="15" y="115" width="90" height="60" rx="10" class="b"/><text x="60" y="151" text-anchor="middle">Client</text>
+<rect x="135" y="115" width="80" height="60" rx="10" class="o"/><text x="175" y="151" text-anchor="middle">CDN</text>
+<rect x="245" y="115" width="80" height="60" rx="10" class="o"/><text x="285" y="143" text-anchor="middle">LB</text><text x="285" y="162" text-anchor="middle" class="s">L7</text>
+<rect x="355" y="115" width="90" height="60" rx="10" class="b"/><text x="400" y="143" text-anchor="middle">App ×N</text><text x="400" y="162" text-anchor="middle" class="s">stateless</text>
+<rect x="490" y="20" width="110" height="55" rx="10" class="o"/><text x="545" y="52" text-anchor="middle">Redis cache</text>
+<rect x="490" y="120" width="110" height="55" rx="10" class="g"/><text x="545" y="145" text-anchor="middle">DB</text><text x="545" y="164" text-anchor="middle" class="s">sharded + replicas</text>
+<rect x="490" y="220" width="110" height="55" rx="10" class="o"/><text x="545" y="245" text-anchor="middle">Queue</text><text x="545" y="264" text-anchor="middle" class="s">click events</text>
+<rect x="625" y="220" width="65" height="55" rx="10" class="g"/><text x="657" y="252" text-anchor="middle">Stats</text>
+<path d="M107 145 H131" class="l" marker-end="url(#a)"/><path d="M217 145 H241" class="l" marker-end="url(#a)"/><path d="M327 145 H351" class="l" marker-end="url(#a)"/>
+<path d="M447 130 L486 60" class="l" marker-end="url(#a)"/><path d="M447 145 H486" class="d" marker-end="url(#a)"/><path d="M447 160 L486 240" class="l" marker-end="url(#a)"/><path d="M602 247 H621" class="l" marker-end="url(#a)"/>
+</svg>
