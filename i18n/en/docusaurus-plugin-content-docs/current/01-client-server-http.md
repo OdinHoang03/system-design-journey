@@ -89,11 +89,9 @@ HTTP keeps **no state** between two requests. To "remember" that a user is logge
 
 ## Exercises & interview questions
 
-1. What happens from the moment you type `https://notenest.example` until the page appears? List every step and say where the most time is spent.
-2. Why is `PUT` idempotent while `POST` is not? Give an example of what goes wrong when a client retries a `POST` that creates an order.
-3. Design a way to mark a user as "logged in" without server-side sessions. What are the pros and cons?
-4. When would you choose WebSocket over polling?
-5. *Hands-on:* run `curl -v https://example.com` and point out the request line, headers, and status code.
+Pick one answer per question; the right answer and an explanation appear straight away. Results are saved in this browser.
+
+<Quiz lessonId="client-server-http" />
 
 ## Further reading
 

@@ -99,12 +99,9 @@ A note has just been edited, but the cache still holds the old version. Ways to 
 
 ## Exercises & interview questions
 
-1. Write cache-aside for `get_note(id)` with Redis, including a TTL and deleting the key when a note is edited.
-2. Calculate: going from a 90% to a 99% hit ratio, by what factor does the number of queries reaching the DB drop?
-3. Explain cache stampede and propose two ways to mitigate it.
-4. When would you choose write-through over cache-aside? And write-back?
-5. Design a cache for a constantly updating leaderboard. How much data staleness do you accept, and why?
-6. How is an LRU implemented with O(1) complexity? (Hint: a hash map plus a doubly linked list.)
+Pick one answer per question; the right answer and an explanation appear straight away. Results are saved in this browser.
+
+<Quiz lessonId="cache" />
 
 ## Further reading
 

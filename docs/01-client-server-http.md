@@ -89,11 +89,9 @@ HTTP **không lưu trạng thái** giữa hai request. Muốn "nhớ" người d
 
 ## Bài tập & câu hỏi phỏng vấn
 
-1. Điều gì xảy ra từ lúc bạn gõ `https://notenest.example` đến lúc trang hiện ra? Liệt kê từng bước và chỗ nào tốn thời gian nhất.
-2. Vì sao `PUT` idempotent còn `POST` thì không? Cho ví dụ hậu quả khi client retry một `POST` tạo đơn hàng.
-3. Thiết kế cách đánh dấu "đã đăng nhập" mà không dùng session trên server. Ưu nhược điểm?
-4. Khi nào chọn WebSocket thay vì polling?
-5. *Thực hành:* dùng `curl -v https://example.com` và chỉ ra request line, header, status code.
+Chọn một đáp án cho mỗi câu; đáp án đúng và lời giải hiện ngay. Kết quả được lưu trong trình duyệt này.
+
+<Quiz lessonId="client-server-http" />
 
 ## Đọc thêm
 

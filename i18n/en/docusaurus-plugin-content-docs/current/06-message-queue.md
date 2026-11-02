@@ -87,12 +87,9 @@ Queues usually guarantee order only within a partition/group (for example, the s
 
 ## Exercises & interview questions
 
-1. Design NoteNest's "export PDF" flow with a queue: how does the user get the result (polling, email, WebSocket)?
-2. Why is exactly-once almost impossible to achieve, and what do we do instead?
-3. Write an idempotent consumer for "send welcome email".
-4. Explain DLQs, visibility timeouts, and backoff.
-5. The queue keeps growing. List the possible causes and how to deal with them.
-6. When would you pick Kafka (a log) over a RabbitMQ/SQS-style queue?
+Pick one answer per question; the right answer and an explanation appear straight away. Results are saved in this browser.
+
+<Quiz lessonId="message-queue" />
 
 ## Further reading
 

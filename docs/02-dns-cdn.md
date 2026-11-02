@@ -88,11 +88,9 @@ Sửa `app.js` mà edge vẫn giữ bản cũ? Có ba cách:
 
 ## Bài tập & câu hỏi phỏng vấn
 
-1. Chạy `dig +trace notenest.example` (hoặc một domain bất kỳ) và chỉ ra từng tầng: root, TLD, authoritative.
-2. Bạn cần chuyển server sang IP mới với downtime tối thiểu. Làm theo thứ tự nào, và chỉnh TTL ra sao?
-3. Thiết kế chiến lược cache cho: ảnh đại diện, `app.js`, trang chủ, API danh sách ghi chú của người dùng.
-4. CDN giúp gì cho nội dung động? Khi nào *không nên* cache?
-5. Giải thích cache stampede ở CDN và hai cách giảm nhẹ (request coalescing, stale-while-revalidate).
+Chọn một đáp án cho mỗi câu; đáp án đúng và lời giải hiện ngay. Kết quả được lưu trong trình duyệt này.
+
+<Quiz lessonId="dns-cdn" />
 
 ## Đọc thêm
 

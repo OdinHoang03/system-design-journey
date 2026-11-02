@@ -98,12 +98,9 @@ The question isn't "which one scales better" but "what do your data model and qu
 
 ## Exercises & interview questions
 
-1. Design the NoteNest schema and choose a shard key. Which queries become cross-shard?
-2. Explain replication lag and give two ways to keep users from seeing stale data right after they write.
-3. The primary dies; replica 1 lags by 2 seconds and replica 2 by 5 seconds. Which one do you promote, and what data might be lost?
-4. Compare `hash(key) mod N` with consistent hashing when you add a shard.
-5. How would you handle a "hot user" with tens of millions of followers?
-6. When should you *not* shard?
+Pick one answer per question; the right answer and an explanation appear straight away. Results are saved in this browser.
+
+<Quiz lessonId="database-replication-sharding" />
 
 ## Further reading
 

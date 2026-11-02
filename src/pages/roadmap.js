@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import RoadmapDiagram from '../components/RoadmapDiagram';
+import ProgressSummary from '../components/progress/ProgressSummary';
 import useL from '../components/useL';
 
 export default function Roadmap() {
@@ -23,6 +24,7 @@ export default function Roadmap() {
             zh: '每一课是旅程的一站:应用不断变大,每次变大都会遇到新的瓶颈。点击任一站即可阅读。',
           })}
         </p>
+        <ProgressSummary />
         <RoadmapDiagram />
         <p style={{textAlign: 'center', marginTop: '1.5rem'}}>
           <em>

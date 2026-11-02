@@ -80,12 +80,9 @@ Một LB duy nhất lại là single point of failure. Thực tế dùng cặp L
 
 ## Bài tập & câu hỏi phỏng vấn
 
-1. Cấu hình NGINX làm LB cho ba server local (cổng 3001–3003), tắt một server và quan sát request vẫn thành công.
-2. Khi nào round robin hoạt động tệ, và `least connections` sửa được điều gì?
-3. App của bạn lưu phiên trong RAM. Liệt kê ba cách chuyển sang scale ngang, nêu ưu nhược điểm.
-4. Làm sao tránh LB trở thành single point of failure?
-5. Phân biệt LB L4 và L7; khi nào bạn cần L7?
-6. Thiết kế health check cho một API phụ thuộc database và cache.
+Chọn một đáp án cho mỗi câu; đáp án đúng và lời giải hiện ngay. Kết quả được lưu trong trình duyệt này.
+
+<Quiz lessonId="load-balancer" />
 
 ## Đọc thêm
 

@@ -88,11 +88,9 @@ DNS 也是一种粗粒度的流量分配手段:可以返回多个 IP,或者按�
 
 ## 练习与面试题
 
-1. 运行 `dig +trace notenest.example`(或任意域名),指出每一层:根、TLD、权威服务器。
-2. 你需要把服务器迁移到新 IP,并尽量缩短停机时间。应该按什么顺序操作,TTL 该怎么调?
-3. 为以下对象设计缓存策略:用户头像、`app.js`、首页、用户的笔记列表 API。
-4. CDN 对动态内容有什么帮助?什么时候*不应该*缓存?
-5. 解释 CDN 上的 cache stampede,并给出两种缓解办法(请求合并 request coalescing、stale-while-revalidate)。
+每题选一个答案,正确答案和解析会立即显示。结果保存在此浏览器中。
+
+<Quiz lessonId="dns-cdn" />
 
 ## 延伸阅读
 

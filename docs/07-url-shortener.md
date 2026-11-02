@@ -121,13 +121,9 @@ Luồng ghi: app xin ID từ khối đã cấp, đổi Base62, ghi vào primary,
 
 ## Bài tập & câu hỏi phỏng vấn
 
-1. Tự làm lại phần ước lượng với số liệu khác (1 tỷ link/tháng). Thành phần nào thay đổi trước?
-2. So sánh ba cách sinh mã; chọn một và bảo vệ lựa chọn.
-3. Thêm tính năng "link tự huỷ sau N lần click". Cần sửa gì và gặp vấn đề tương tranh nào?
-4. Thiết kế thống kê "top link theo quốc gia trong 24 giờ".
-5. Hệ thống phải chịu được cache chết hoàn toàn. Bạn làm gì?
-6. Mở rộng sang nhiều vùng địa lý: dữ liệu và ID đặt ở đâu?
-7. *Thực hành:* cài đặt bản tối giản (một server, SQLite, `to_base62`) rồi thêm cache.
+Chọn một đáp án cho mỗi câu; đáp án đúng và lời giải hiện ngay. Kết quả được lưu trong trình duyệt này.
+
+<Quiz lessonId="url-shortener" />
 
 ## Đọc thêm
 

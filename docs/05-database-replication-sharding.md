@@ -98,12 +98,9 @@ Không phải câu hỏi "cái nào scale tốt hơn" mà là "mô hình dữ li
 
 ## Bài tập & câu hỏi phỏng vấn
 
-1. Thiết kế lược đồ cho NoteNest và chọn shard key. Truy vấn nào sẽ trở thành xuyên shard?
-2. Giải thích replication lag và đưa ra hai cách để người dùng không thấy dữ liệu cũ sau khi vừa ghi.
-3. Primary chết, replica 1 trễ 2 giây, replica 2 trễ 5 giây. Thăng cấp cái nào, và dữ liệu nào có thể mất?
-4. So sánh `hash(key) mod N` và consistent hashing khi thêm một shard.
-5. Làm sao xử lý một "hot user" có hàng chục triệu người theo dõi?
-6. Khi nào bạn *không* nên shard?
+Chọn một đáp án cho mỗi câu; đáp án đúng và lời giải hiện ngay. Kết quả được lưu trong trình duyệt này.
+
+<Quiz lessonId="database-replication-sharding" />
 
 ## Đọc thêm
 
