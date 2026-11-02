@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 260" role="img" aria-labelledby="t d"><title id="t">Consensus with majority quorum</title><desc id="d">A client writes to the leader; the leader replicates the log entry to two followers and commits once a majority of three nodes has stored it.</desc><style>text{font:600 16px sans-serif;fill:#1b1b1b}.s{font:400 13px sans-serif;fill:#444}.b{fill:#e8f5ee;stroke:#1f6b45;stroke-width:2.5}.g{fill:#f3f3f3;stroke:#777;stroke-width:2}.o{fill:#fff3e0;stroke:#c77700;stroke-width:2.5}.l{stroke:#555;stroke-width:2.2;fill:none}.d{stroke:#555;stroke-width:2.2;fill:none;stroke-dasharray:6 5}</style><defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker></defs>
+<rect x="20" y="100" width="110" height="60" rx="10" class="g"/><text x="75" y="136" text-anchor="middle">Client</text>
+<rect x="250" y="100" width="150" height="60" rx="10" class="o"/><text x="325" y="127" text-anchor="middle">Leader</text><text x="325" y="147" text-anchor="middle" class="s">term 7</text>
+<rect x="540" y="25" width="140" height="60" rx="10" class="b"/><text x="610" y="52" text-anchor="middle">Follower A</text><text x="610" y="72" text-anchor="middle" class="s">stored ✓</text>
+<rect x="540" y="175" width="140" height="60" rx="10" class="g"/><text x="610" y="202" text-anchor="middle">Follower B</text><text x="610" y="222" text-anchor="middle" class="s">slow / down</text>
+<path d="M132 130 H246" class="l" marker-end="url(#a)"/><text x="190" y="120" text-anchor="middle" class="s">write</text>
+<path d="M402 115 L536 60" class="l" marker-end="url(#a)"/><path d="M402 145 L536 200" class="d" marker-end="url(#a)"/>
+<text x="325" y="200" text-anchor="middle" class="s">2 of 3 = majority → commit</text>
+</svg>

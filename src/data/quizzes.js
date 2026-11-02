@@ -10,6 +10,18 @@ import monolithMicroservices from './quizzes/monolith-microservices';
 import observability from './quizzes/observability';
 import deploymentRelease from './quizzes/deployment-release';
 import securityBasics from './quizzes/security-basics';
+import eventStreaming from './quizzes/event-streaming';
+import reliabilityPatterns from './quizzes/reliability-patterns';
+import distributedTransactions from './quizzes/distributed-transactions';
+import consensus from './quizzes/consensus';
+import sqlVsNosql from './quizzes/sql-vs-nosql';
+import indexingStorageEngines from './quizzes/indexing-storage-engines';
+import consistencyCap from './quizzes/consistency-cap';
+import objectStorageSearch from './quizzes/object-storage-search';
+import estimation from './quizzes/estimation';
+import apiDesign from './quizzes/api-design';
+import proxyApiGateway from './quizzes/proxy-api-gateway';
+import rateLimiting from './quizzes/rate-limiting';
 
 export const quizzes = {
   'client-server-http': clientServerHttp,
@@ -22,5 +34,17 @@ export const quizzes = {
   observability,
   'deployment-release': deploymentRelease,
   'security-basics': securityBasics,
+  'event-streaming': eventStreaming,
+  'reliability-patterns': reliabilityPatterns,
+  'distributed-transactions': distributedTransactions,
+  consensus,
   'url-shortener': urlShortener,
+  'sql-vs-nosql': sqlVsNosql,
+  'indexing-storage-engines': indexingStorageEngines,
+  'consistency-cap': consistencyCap,
+  'object-storage-search': objectStorageSearch,
+  estimation,
+  'api-design': apiDesign,
+  'proxy-api-gateway': proxyApiGateway,
+  'rate-limiting': rateLimiting,
 };
