@@ -1,0 +1,11 @@
+.svg { width: 100%; height: auto; max-width: 720px; display: block; margin: 0 auto; }
+.box { fill: var(--ifm-background-surface-color); stroke: var(--ifm-color-primary); stroke-width: 2; }
+a:hover .box { fill: var(--ifm-color-emphasis-100); }
+.badge { fill: var(--ifm-color-primary-darker); }
+.num { fill: #fff; font: 700 20px var(--ifm-font-family-base); }
+.title { fill: var(--ifm-font-color-base); font: 700 19px var(--ifm-font-family-base); }
+.story { fill: var(--ifm-color-emphasis-700); font: 400 15px var(--ifm-font-family-base); }
+.users { fill: var(--ifm-color-primary-darker); font: 700 22px var(--ifm-font-family-base); }
+.usersLabel { fill: var(--ifm-color-emphasis-700); font: 400 13px var(--ifm-font-family-base); }
+.arrow { stroke: var(--ifm-color-emphasis-600); stroke-width: 2.5; }
+.arrowHead { fill: var(--ifm-color-emphasis-600); }
