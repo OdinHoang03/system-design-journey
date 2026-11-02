@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 280" role="img" aria-labelledby="t d"><title id="t">Load balancer</title><desc id="d">Clients send requests to a load balancer which spreads them over three app servers sharing one database.</desc><style>text{font:600 16px sans-serif;fill:#1b1b1b}.s{font:400 13px sans-serif;fill:#444}.b{fill:#e8f5ee;stroke:#1f6b45;stroke-width:2.5}.g{fill:#f3f3f3;stroke:#777;stroke-width:2}.o{fill:#fff3e0;stroke:#c77700;stroke-width:2.5}.l{stroke:#555;stroke-width:2.2;fill:none}.d{stroke:#555;stroke-width:2.2;fill:none;stroke-dasharray:6 5}</style><defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker></defs>
+<rect x="20" y="105" width="110" height="60" rx="10" class="b"/><text x="75" y="141" text-anchor="middle">Clients</text>
+<rect x="210" y="105" width="130" height="60" rx="10" class="o"/><text x="275" y="132" text-anchor="middle">Load balancer</text><text x="275" y="152" text-anchor="middle" class="s">health checks</text>
+<rect x="430" y="20" width="110" height="50" rx="10" class="b"/><text x="485" y="50" text-anchor="middle">App 1</text>
+<rect x="430" y="110" width="110" height="50" rx="10" class="b"/><text x="485" y="140" text-anchor="middle">App 2</text>
+<rect x="430" y="200" width="110" height="50" rx="10" class="g"/><text x="485" y="230" text-anchor="middle">App 3 (down)</text>
+<rect x="590" y="105" width="90" height="60" rx="10" class="g"/><text x="635" y="141" text-anchor="middle">DB</text>
+<path d="M132 135 H206" class="l" marker-end="url(#a)"/>
+<path d="M342 125 L426 50" class="l" marker-end="url(#a)"/><path d="M342 135 H426" class="l" marker-end="url(#a)"/><path d="M342 150 L426 222" class="d" marker-end="url(#a)"/>
+<path d="M542 50 L588 120" class="l"/><path d="M542 135 H588" class="l"/>
+</svg>
