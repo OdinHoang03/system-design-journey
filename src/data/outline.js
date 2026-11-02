@@ -8,9 +8,9 @@ export const parts = [
     lessons: [
       {n: 1, id: 'client-server-http', done: true, title: {vi: 'Client–server & HTTP', en: 'Client–server & HTTP', zh: '客户端–服务器与 HTTP'}},
       {n: 2, id: 'dns-cdn', done: true, title: {vi: 'DNS & CDN', en: 'DNS & CDN', zh: 'DNS 与 CDN'}},
-      {n: 8, id: 'estimation', title: {vi: 'Ước lượng quy mô (back-of-envelope)', en: 'Back-of-the-envelope estimation', zh: '规模估算'},
+      {n: 8, id: 'estimation', done: true, title: {vi: 'Ước lượng quy mô (back-of-envelope)', en: 'Back-of-the-envelope estimation', zh: '规模估算'},
         sum: {vi: 'QPS, băng thông, dung lượng lưu trữ; con số cần thuộc.', en: 'QPS, bandwidth, storage; the numbers worth memorizing.', zh: 'QPS、带宽、存储量;值得记住的数字。'}},
-      {n: 9, id: 'api-design', title: {vi: 'Thiết kế API', en: 'API design', zh: 'API 设计'},
+      {n: 9, id: 'api-design', done: true, title: {vi: 'Thiết kế API', en: 'API design', zh: 'API 设计'},
         sum: {vi: 'REST, gRPC, GraphQL; phân trang, version, idempotency key.', en: 'REST, gRPC, GraphQL; pagination, versioning, idempotency keys.', zh: 'REST、gRPC、GraphQL;分页、版本、幂等键。'}},
     ],
   },
@@ -20,9 +20,9 @@ export const parts = [
     lessons: [
       {n: 3, id: 'load-balancer', done: true, title: {vi: 'Load balancer & scale ngang', en: 'Load balancer & horizontal scaling', zh: '负载均衡与水平扩展'}},
       {n: 4, id: 'cache', done: true, title: {vi: 'Cache', en: 'Caching', zh: '缓存'}},
-      {n: 10, id: 'proxy-api-gateway', title: {vi: 'Reverse proxy & API gateway', en: 'Reverse proxy & API gateway', zh: '反向代理与 API 网关'},
+      {n: 10, id: 'proxy-api-gateway', done: true, title: {vi: 'Reverse proxy & API gateway', en: 'Reverse proxy & API gateway', zh: '反向代理与 API 网关'},
         sum: {vi: 'Một cửa vào: định tuyến, xác thực, TLS termination.', en: 'One front door: routing, auth, TLS termination.', zh: '统一入口:路由、认证、TLS 终止。'}},
-      {n: 11, id: 'rate-limiting', title: {vi: 'Rate limiting', en: 'Rate limiting', zh: '限流'},
+      {n: 11, id: 'rate-limiting', done: true, title: {vi: 'Rate limiting', en: 'Rate limiting', zh: '限流'},
         sum: {vi: 'Token bucket, sliding window; giới hạn ở đâu và theo gì.', en: 'Token bucket, sliding window; where to limit and by what key.', zh: '令牌桶、滑动窗口;在哪里限、按什么限。'}},
     ],
   },

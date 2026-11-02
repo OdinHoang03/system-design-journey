@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 270" role="img" aria-labelledby="t d"><title id="t">API gateway as the single front door</title><desc id="d">Web and mobile clients reach one gateway that terminates TLS, authenticates, rate limits and routes to users, notes and search services.</desc><style>text{font:600 16px sans-serif;fill:#1b1b1b}.s{font:400 13px sans-serif;fill:#444}.b{fill:#e8f5ee;stroke:#1f6b45;stroke-width:2.5}.g{fill:#f3f3f3;stroke:#777;stroke-width:2}.o{fill:#fff3e0;stroke:#c77700;stroke-width:2.5}.l{stroke:#555;stroke-width:2.2;fill:none}</style><defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker></defs>
+<rect x="20" y="50" width="110" height="50" rx="10" class="g"/><text x="75" y="81" text-anchor="middle">Web</text>
+<rect x="20" y="150" width="110" height="50" rx="10" class="g"/><text x="75" y="181" text-anchor="middle">Mobile</text>
+<rect x="250" y="40" width="210" height="180" rx="12" class="o"/><text x="355" y="68" text-anchor="middle">API gateway</text><text x="355" y="103" text-anchor="middle" class="s">TLS termination</text><text x="355" y="128" text-anchor="middle" class="s">authentication</text><text x="355" y="153" text-anchor="middle" class="s">rate limiting</text><text x="355" y="178" text-anchor="middle" class="s">routing · logging</text>
+<rect x="590" y="30" width="150" height="50" rx="10" class="b"/><text x="665" y="61" text-anchor="middle">/users</text>
+<rect x="590" y="110" width="150" height="50" rx="10" class="b"/><text x="665" y="141" text-anchor="middle">/notes</text>
+<rect x="590" y="190" width="150" height="50" rx="10" class="b"/><text x="665" y="221" text-anchor="middle">/search</text>
+<path d="M132 78 L246 110" class="l" marker-end="url(#a)"/><path d="M132 175 L246 150" class="l" marker-end="url(#a)"/>
+<path d="M462 100 L586 58" class="l" marker-end="url(#a)"/><path d="M462 130 L586 135" class="l" marker-end="url(#a)"/><path d="M462 160 L586 210" class="l" marker-end="url(#a)"/>
+<text x="150" y="40" class="s">HTTPS</text>
+</svg>
