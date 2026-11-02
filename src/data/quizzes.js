@@ -6,6 +6,10 @@ import cache from './quizzes/cache';
 import databaseReplicationSharding from './quizzes/database-replication-sharding';
 import messageQueue from './quizzes/message-queue';
 import urlShortener from './quizzes/url-shortener';
+import sqlVsNosql from './quizzes/sql-vs-nosql';
+import indexingStorageEngines from './quizzes/indexing-storage-engines';
+import consistencyCap from './quizzes/consistency-cap';
+import objectStorageSearch from './quizzes/object-storage-search';
 import estimation from './quizzes/estimation';
 import apiDesign from './quizzes/api-design';
 import proxyApiGateway from './quizzes/proxy-api-gateway';
@@ -19,6 +23,10 @@ export const quizzes = {
   'database-replication-sharding': databaseReplicationSharding,
   'message-queue': messageQueue,
   'url-shortener': urlShortener,
+  'sql-vs-nosql': sqlVsNosql,
+  'indexing-storage-engines': indexingStorageEngines,
+  'consistency-cap': consistencyCap,
+  'object-storage-search': objectStorageSearch,
   estimation,
   'api-design': apiDesign,
   'proxy-api-gateway': proxyApiGateway,

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 300" role="img" aria-labelledby="t d"><title id="t">B-tree versus LSM-tree</title><desc id="d">A B-tree updates pages in place on disk; an LSM-tree writes to a memtable and log, flushes sorted files, and compacts them in the background.</desc><style>text{font:600 16px sans-serif;fill:#1b1b1b}.s{font:400 13px sans-serif;fill:#444}.b{fill:#e8f5ee;stroke:#1f6b45;stroke-width:2.5}.g{fill:#f3f3f3;stroke:#777;stroke-width:2}.o{fill:#fff3e0;stroke:#c77700;stroke-width:2.5}.l{stroke:#555;stroke-width:2.2;fill:none}.d{stroke:#555;stroke-width:2.2;fill:none;stroke-dasharray:6 5}</style><defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker></defs>
+<text x="20" y="24">B-tree: update in place</text>
+<rect x="150" y="40" width="100" height="40" rx="8" class="o"/><text x="200" y="66" text-anchor="middle" class="s">root page</text>
+<rect x="60" y="120" width="90" height="40" rx="8" class="g"/><text x="105" y="146" text-anchor="middle" class="s">page</text>
+<rect x="250" y="120" width="90" height="40" rx="8" class="g"/><text x="295" y="146" text-anchor="middle" class="s">page</text>
+<path d="M180 82 L110 118" class="l" marker-end="url(#a)"/><path d="M220 82 L290 118" class="l" marker-end="url(#a)"/>
+<text x="20" y="200" class="s">read: few page hops</text><text x="20" y="222" class="s">write: random page rewrite + WAL</text>
+<line x1="370" y1="20" x2="370" y2="285" stroke="#bbb" stroke-width="2"/>
+<text x="390" y="24">LSM-tree: append, merge later</text>
+<rect x="390" y="40" width="130" height="44" rx="8" class="o"/><text x="455" y="60" text-anchor="middle" class="s">memtable</text><text x="455" y="76" text-anchor="middle" class="s">(RAM, sorted)</text>
+<rect x="560" y="40" width="120" height="44" rx="8" class="g"/><text x="620" y="66" text-anchor="middle" class="s">WAL (append)</text>
+<rect x="390" y="130" width="100" height="36" rx="8" class="b"/><text x="440" y="153" text-anchor="middle" class="s">SSTable L0</text>
+<rect x="510" y="130" width="100" height="36" rx="8" class="b"/><text x="560" y="153" text-anchor="middle" class="s">SSTable L0</text>
+<rect x="420" y="200" width="200" height="36" rx="8" class="b"/><text x="520" y="223" text-anchor="middle" class="s">SSTable L1 (merged)</text>
+<path d="M455 86 V128" class="l" marker-end="url(#a)"/><text x="465" y="112" class="s">flush</text>
+<path d="M440 168 L480 198" class="d" marker-end="url(#a)"/><path d="M560 168 L560 198" class="d" marker-end="url(#a)"/><text x="580" y="190" class="s">compaction</text>
+<text x="390" y="266" class="s">write: sequential, fast. read: check several files + Bloom filter</text>
+</svg>
