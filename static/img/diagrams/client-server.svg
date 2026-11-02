@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 220" role="img" aria-labelledby="t d">
+  <title id="t">Client – Server</title>
+  <desc id="d">A client sends an HTTP request to a server and the server returns a response.</desc>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker>
+  </defs>
+  <style>text{font:600 18px sans-serif;fill:#1b1b1b}.s{font:400 14px sans-serif;fill:#444}.b{fill:#e8f5ee;stroke:#2e8555;stroke-width:2.5}</style>
+  <rect x="20" y="60" width="160" height="100" rx="12" class="b"/>
+  <text x="100" y="105" text-anchor="middle">Client</text>
+  <text x="100" y="130" text-anchor="middle" class="s">browser / app</text>
+  <rect x="460" y="60" width="160" height="100" rx="12" class="b"/>
+  <text x="540" y="105" text-anchor="middle">Server</text>
+  <text x="540" y="130" text-anchor="middle" class="s">API + database</text>
+  <line x1="185" y1="90" x2="455" y2="90" stroke="#555" stroke-width="2.5" marker-end="url(#a)"/>
+  <text x="320" y="78" text-anchor="middle" class="s">HTTP request  GET /hello</text>
+  <line x1="455" y1="135" x2="185" y2="135" stroke="#555" stroke-width="2.5" marker-end="url(#a)"/>
+  <text x="320" y="158" text-anchor="middle" class="s">HTTP response  200 OK</text>
+</svg>

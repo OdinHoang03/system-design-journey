@@ -1,0 +1,26 @@
+{
+  "title": {
+    "message": "System Design Journey",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "System Design Journey",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Bài học": {
+    "message": "Lessons",
+    "description": "Navbar item with label Bài học"
+  },
+  "item.label.Lộ trình": {
+    "message": "Roadmap",
+    "description": "Navbar item with label Lộ trình"
+  },
+  "item.label.Tài nguyên": {
+    "message": "Resources",
+    "description": "Navbar item with label Tài nguyên"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}
