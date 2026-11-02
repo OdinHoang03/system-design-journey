@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 250" role="img" aria-labelledby="t d"><title id="t">Idempotency key</title><desc id="d">A client retries a POST with the same Idempotency-Key; the server returns the stored result instead of creating a second order.</desc><style>text{font:600 16px sans-serif;fill:#1b1b1b}.s{font:400 13px sans-serif;fill:#444}.b{fill:#e8f5ee;stroke:#1f6b45;stroke-width:2.5}.g{fill:#f3f3f3;stroke:#777;stroke-width:2}.o{fill:#fff3e0;stroke:#c77700;stroke-width:2.5}.l{stroke:#555;stroke-width:2.2;fill:none}</style><defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker></defs>
+<rect x="20" y="90" width="120" height="60" rx="10" class="b"/><text x="80" y="126" text-anchor="middle">Client</text>
+<rect x="290" y="20" width="150" height="60" rx="10" class="o"/><text x="365" y="47" text-anchor="middle">API server</text><text x="365" y="66" text-anchor="middle" class="s">checks the key</text>
+<rect x="290" y="170" width="150" height="60" rx="10" class="g"/><text x="365" y="197" text-anchor="middle">Key store</text><text x="365" y="216" text-anchor="middle" class="s">key → saved result</text>
+<rect x="540" y="20" width="140" height="60" rx="10" class="g"/><text x="610" y="56" text-anchor="middle">Database</text>
+<path d="M140 105 L286 56" class="l" marker-end="url(#a)"/><text x="130" y="60" class="s">1 POST + key K</text>
+<path d="M140 135 L286 195" class="l" marker-end="url(#a)"/><text x="130" y="190" class="s">2 retry, same K</text>
+<path d="M440 50 L536 50" class="l" marker-end="url(#a)"/><text x="450" y="40" class="s">create once</text>
+<path d="M365 82 L365 166" class="l" marker-end="url(#a)"/><text x="375" y="130" class="s">save / look up K</text>
+</svg>
