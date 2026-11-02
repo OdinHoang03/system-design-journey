@@ -19,6 +19,10 @@
     "message": "异步与可靠性",
     "description": "The label for category Bất đồng bộ & độ tin cậy in sidebar lessons"
   },
+  "sidebar.lessons.category.Vận hành & kiến trúc": {
+    "message": "运维与架构",
+    "description": "The label for category Vận hành & kiến trúc in sidebar lessons"
+  },
   "sidebar.lessons.category.Case study": {
     "message": "案例",
     "description": "The label for category Case study in sidebar lessons"
