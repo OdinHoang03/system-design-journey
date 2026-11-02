@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 270" role="img" aria-labelledby="t d"><title id="t">Distributed rate limiter</title><desc id="d">Clients hit the gateway, whose limiter middleware runs an atomic script on Redis; allowed requests go to the API servers, blocked ones get 429.</desc><style>text{font:600 16px sans-serif;fill:#1b1b1b}.s{font:400 13px sans-serif;fill:#444}.b{fill:#e8f5ee;stroke:#1f6b45;stroke-width:2.5}.g{fill:#f3f3f3;stroke:#777;stroke-width:2}.o{fill:#fff3e0;stroke:#c77700;stroke-width:2.5}.l{stroke:#555;stroke-width:2.2;fill:none}.d{stroke:#555;stroke-width:2.2;fill:none;stroke-dasharray:6 5}</style><defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker></defs>
+<rect x="20" y="100" width="100" height="60" rx="10" class="g"/><text x="70" y="136" text-anchor="middle">Clients</text>
+<rect x="190" y="80" width="170" height="100" rx="12" class="o"/><text x="275" y="112" text-anchor="middle">Gateway</text><text x="275" y="138" text-anchor="middle" class="s">limiter middleware</text><text x="275" y="158" text-anchor="middle" class="s">key = user + route</text>
+<rect x="430" y="20" width="150" height="60" rx="10" class="b"/><text x="505" y="47" text-anchor="middle">Redis</text><text x="505" y="66" text-anchor="middle" class="s">atomic Lua script</text>
+<rect x="430" y="190" width="150" height="60" rx="10" class="g"/><text x="505" y="227" text-anchor="middle">429 + Retry-After</text>
+<rect x="620" y="100" width="120" height="60" rx="10" class="b"/><text x="680" y="136" text-anchor="middle">API servers</text>
+<path d="M122 130 L186 130" class="l" marker-end="url(#a)"/>
+<path d="M362 105 L426 55" class="l" marker-end="url(#a)"/><text x="365" y="70" class="s">1 check</text>
+<path d="M430 70 L364 120" class="d" marker-end="url(#a)"/><text x="410" y="118" class="s">2 allow?</text>
+<path d="M362 160 L426 215" class="l" marker-end="url(#a)"/><text x="330" y="215" class="s">no</text>
+<path d="M362 130 L616 130" class="l" marker-end="url(#a)"/><text x="470" y="150" class="s">yes: forward</text>
+</svg>

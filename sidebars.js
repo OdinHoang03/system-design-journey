@@ -22,7 +22,7 @@ const sidebars = {
     {type: 'category', label: 'Dữ liệu', collapsed: false, items: ['database-replication-sharding', 'sql-vs-nosql', 'indexing-storage-engines', 'consistency-cap', 'object-storage-search']},
     {type: 'category', label: 'Bất đồng bộ & độ tin cậy', collapsed: false, items: ['message-queue', 'event-streaming', 'reliability-patterns', 'distributed-transactions', 'consensus']},
     {type: 'category', label: 'Vận hành & kiến trúc', collapsed: false, items: ['monolith-microservices', 'observability', 'deployment-release', 'security-basics']},
-    {type: 'category', label: 'Case study', collapsed: false, items: ['url-shortener']},
+    {type: 'category', label: 'Case study', collapsed: false, items: ['url-shortener', 'case-rate-limiter', 'case-news-feed', 'case-chat', 'case-file-storage', 'case-notification', 'case-autocomplete']},
   ],
 };
 
