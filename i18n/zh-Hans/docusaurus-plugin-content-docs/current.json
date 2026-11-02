@@ -2,5 +2,25 @@
   "version.label": {
     "message": "Next",
     "description": "The label for version current"
+  },
+  "sidebar.lessons.category.Nền tảng": {
+    "message": "基础",
+    "description": "The label for category Nền tảng in sidebar lessons"
+  },
+  "sidebar.lessons.category.Scale & hiệu năng": {
+    "message": "扩展与性能",
+    "description": "The label for category Scale & hiệu năng in sidebar lessons"
+  },
+  "sidebar.lessons.category.Dữ liệu": {
+    "message": "数据",
+    "description": "The label for category Dữ liệu in sidebar lessons"
+  },
+  "sidebar.lessons.category.Bất đồng bộ & độ tin cậy": {
+    "message": "异步与可靠性",
+    "description": "The label for category Bất đồng bộ & độ tin cậy in sidebar lessons"
+  },
+  "sidebar.lessons.category.Case study": {
+    "message": "案例",
+    "description": "The label for category Case study in sidebar lessons"
   }
 }

@@ -53,6 +53,7 @@ const config = {
         items: [
           {type: 'docSidebar', sidebarId: 'lessons', position: 'left', label: 'Bài học'},
           {to: '/roadmap', label: 'Lộ trình', position: 'left'},
+          {to: '/outline', label: 'Đại cương', position: 'left'},
           {to: '/resources', label: 'Tài nguyên', position: 'left'},
           {type: 'localeDropdown', position: 'right'},
           {href: 'https://github.com/OdinHoang03/system-design-journey', label: 'GitHub', position: 'right'},
