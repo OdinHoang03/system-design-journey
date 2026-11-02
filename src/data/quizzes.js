@@ -6,6 +6,10 @@ import cache from './quizzes/cache';
 import databaseReplicationSharding from './quizzes/database-replication-sharding';
 import messageQueue from './quizzes/message-queue';
 import urlShortener from './quizzes/url-shortener';
+import estimation from './quizzes/estimation';
+import apiDesign from './quizzes/api-design';
+import proxyApiGateway from './quizzes/proxy-api-gateway';
+import rateLimiting from './quizzes/rate-limiting';
 
 export const quizzes = {
   'client-server-http': clientServerHttp,
@@ -15,4 +19,8 @@ export const quizzes = {
   'database-replication-sharding': databaseReplicationSharding,
   'message-queue': messageQueue,
   'url-shortener': urlShortener,
+  estimation,
+  'api-design': apiDesign,
+  'proxy-api-gateway': proxyApiGateway,
+  'rate-limiting': rateLimiting,
 };
