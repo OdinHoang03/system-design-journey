@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 270" role="img" aria-labelledby="t d"><title id="t">Search autocomplete</title><desc id="d">Query logs are aggregated offline into a trie whose nodes store top suggestions; the serving path reads from cache and the trie, and the trie is rebuilt periodically.</desc><style>text{font:600 16px sans-serif;fill:#1b1b1b}.s{font:400 13px sans-serif;fill:#444}.b{fill:#e8f5ee;stroke:#1f6b45;stroke-width:2.5}.g{fill:#f3f3f3;stroke:#777;stroke-width:2}.o{fill:#fff3e0;stroke:#c77700;stroke-width:2.5}.l{stroke:#555;stroke-width:2.2;fill:none}</style><defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker></defs>
+<rect x="10" y="30" width="110" height="55" rx="10" class="g"/><text x="65" y="63" text-anchor="middle">Browser</text>
+<rect x="170" y="30" width="130" height="55" rx="10" class="o"/><text x="235" y="55" text-anchor="middle">Cache</text><text x="235" y="74" text-anchor="middle" class="s">prefix → top 5</text>
+<rect x="350" y="30" width="150" height="55" rx="10" class="b"/><text x="425" y="55" text-anchor="middle">Trie servers</text><text x="425" y="74" text-anchor="middle" class="s">top-k per node</text>
+<rect x="10" y="190" width="120" height="55" rx="10" class="g"/><text x="70" y="223" text-anchor="middle">Query logs</text>
+<rect x="190" y="190" width="150" height="55" rx="10" class="g"/><text x="265" y="215" text-anchor="middle">Aggregation</text><text x="265" y="234" text-anchor="middle" class="s">count · filter</text>
+<rect x="400" y="190" width="150" height="55" rx="10" class="b"/><text x="475" y="215" text-anchor="middle">Trie builder</text><text x="475" y="234" text-anchor="middle" class="s">every few minutes</text>
+<path d="M122 52 L166 52" class="l" marker-end="url(#a)"/><text x="122" y="22" class="s">1 type "no"</text>
+<path d="M302 52 L346 52" class="l" marker-end="url(#a)"/><text x="302" y="22" class="s">2 miss</text>
+<path d="M132 217 L186 217" class="l" marker-end="url(#a)"/><path d="M342 217 L396 217" class="l" marker-end="url(#a)"/>
+<path d="M475 188 C 475 140 440 120 428 90" class="l" marker-end="url(#a)"/><text x="490" y="140" class="s">3 publish new trie</text>
+<text x="570" y="63" class="s">p99 &lt; 100 ms</text>
+</svg>

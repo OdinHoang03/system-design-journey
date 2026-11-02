@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 290" role="img" aria-labelledby="t d"><title id="t">News feed fan-out</title><desc id="d">A post is written once; a fan-out worker pushes its id into followers' feed caches for normal users, while celebrity posts are pulled at read time and merged.</desc><style>text{font:600 16px sans-serif;fill:#1b1b1b}.s{font:400 13px sans-serif;fill:#444}.b{fill:#e8f5ee;stroke:#1f6b45;stroke-width:2.5}.g{fill:#f3f3f3;stroke:#777;stroke-width:2}.o{fill:#fff3e0;stroke:#c77700;stroke-width:2.5}.l{stroke:#555;stroke-width:2.2;fill:none}.d{stroke:#555;stroke-width:2.2;fill:none;stroke-dasharray:6 5}</style><defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker></defs>
+<rect x="20" y="40" width="120" height="50" rx="10" class="g"/><text x="80" y="70" text-anchor="middle">Post API</text>
+<rect x="190" y="40" width="130" height="50" rx="10" class="o"/><text x="255" y="62" text-anchor="middle">Queue</text><text x="255" y="80" text-anchor="middle" class="s">new-post event</text>
+<rect x="370" y="40" width="150" height="50" rx="10" class="o"/><text x="445" y="62" text-anchor="middle">Fan-out worker</text><text x="445" y="80" text-anchor="middle" class="s">push for normal users</text>
+<rect x="570" y="20" width="170" height="90" rx="10" class="b"/><text x="655" y="48" text-anchor="middle">Feed cache</text><text x="655" y="70" text-anchor="middle" class="s">per-user list of</text><text x="655" y="88" text-anchor="middle" class="s">post ids (Redis)</text>
+<rect x="20" y="190" width="120" height="50" rx="10" class="g"/><text x="80" y="220" text-anchor="middle">Reader</text>
+<rect x="190" y="190" width="130" height="50" rx="10" class="o"/><text x="255" y="220" text-anchor="middle">Feed API</text>
+<rect x="370" y="190" width="150" height="50" rx="10" class="g"/><text x="445" y="212" text-anchor="middle">Celebrity posts</text><text x="445" y="230" text-anchor="middle" class="s">pulled on read</text>
+<rect x="570" y="190" width="170" height="50" rx="10" class="g"/><text x="655" y="220" text-anchor="middle">Post store (DB)</text>
+<path d="M142 65 L186 65" class="l" marker-end="url(#a)"/><path d="M322 65 L366 65" class="l" marker-end="url(#a)"/><path d="M522 65 L566 65" class="l" marker-end="url(#a)"/>
+<path d="M142 215 L186 215" class="l" marker-end="url(#a)"/>
+<path d="M322 205 C 420 150 520 130 600 112" class="l" marker-end="url(#a)"/><text x="400" y="150" class="s">1 read ids</text>
+<path d="M322 220 L366 220" class="l" marker-end="url(#a)"/><path d="M522 215 L566 215" class="l" marker-end="url(#a)"/><text x="330" y="265" class="s">2 merge, then hydrate posts from DB</text>
+</svg>

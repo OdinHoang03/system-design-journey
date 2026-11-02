@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 290" role="img" aria-labelledby="t d"><title id="t">Chat system</title><desc id="d">Two users hold WebSocket connections to different chat servers; a message is stored in the message store, then routed through a presence and routing registry to the recipient's server, or to push notification if offline.</desc><style>text{font:600 16px sans-serif;fill:#1b1b1b}.s{font:400 13px sans-serif;fill:#444}.b{fill:#e8f5ee;stroke:#1f6b45;stroke-width:2.5}.g{fill:#f3f3f3;stroke:#777;stroke-width:2}.o{fill:#fff3e0;stroke:#c77700;stroke-width:2.5}.l{stroke:#555;stroke-width:2.2;fill:none}.d{stroke:#555;stroke-width:2.2;fill:none;stroke-dasharray:6 5}</style><defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker></defs>
+<rect x="10" y="30" width="100" height="50" rx="10" class="b"/><text x="60" y="61" text-anchor="middle">Alice</text>
+<rect x="10" y="190" width="100" height="50" rx="10" class="b"/><text x="60" y="221" text-anchor="middle">Bob</text>
+<rect x="190" y="25" width="150" height="60" rx="10" class="o"/><text x="265" y="52" text-anchor="middle">Chat server A</text><text x="265" y="71" text-anchor="middle" class="s">WebSocket</text>
+<rect x="190" y="185" width="150" height="60" rx="10" class="o"/><text x="265" y="212" text-anchor="middle">Chat server B</text><text x="265" y="231" text-anchor="middle" class="s">WebSocket</text>
+<rect x="430" y="105" width="150" height="60" rx="10" class="g"/><text x="505" y="132" text-anchor="middle">Registry</text><text x="505" y="151" text-anchor="middle" class="s">user → server, presence</text>
+<rect x="620" y="25" width="130" height="60" rx="10" class="g"/><text x="685" y="52" text-anchor="middle">Message store</text><text x="685" y="71" text-anchor="middle" class="s">by chat, time</text>
+<rect x="620" y="185" width="130" height="60" rx="10" class="g"/><text x="685" y="212" text-anchor="middle">Push</text><text x="685" y="231" text-anchor="middle" class="s">if offline</text>
+<path d="M112 55 L186 55" class="l" marker-end="url(#a)"/><text x="115" y="45" class="s">1 send</text>
+<path d="M342 55 L616 55" class="l" marker-end="url(#a)"/><text x="440" y="45" class="s">2 persist</text>
+<path d="M300 87 L450 106" class="l" marker-end="url(#a)"/><text x="330" y="112" class="s">3 lookup Bob</text>
+<path d="M430 160 L340 195" class="l" marker-end="url(#a)"/><text x="385" y="198" class="s">4 route</text>
+<path d="M188 215 L114 215" class="l" marker-end="url(#a)"/><text x="125" y="207" class="s">5 deliver</text>
+<path d="M342 230 L616 215" class="d" marker-end="url(#a)"/><text x="450" y="238" class="s">offline: push</text>
+</svg>

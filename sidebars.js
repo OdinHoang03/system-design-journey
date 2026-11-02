@@ -21,7 +21,7 @@ const sidebars = {
     {type: 'category', label: 'Scale & hiệu năng', collapsed: false, items: ['load-balancer', 'cache']},
     {type: 'category', label: 'Dữ liệu', collapsed: false, items: ['database-replication-sharding']},
     {type: 'category', label: 'Bất đồng bộ & độ tin cậy', collapsed: false, items: ['message-queue']},
-    {type: 'category', label: 'Case study', collapsed: false, items: ['url-shortener']},
+    {type: 'category', label: 'Case study', collapsed: false, items: ['url-shortener', 'case-rate-limiter', 'case-news-feed', 'case-chat', 'case-file-storage', 'case-notification', 'case-autocomplete']},
   ],
 };
 
